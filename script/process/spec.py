@@ -5,7 +5,7 @@
 from pathlib import Path
 import numpy as np
 
-from script.HTKFeat import MFCC_HTK
+from work.HTKFeat import MFCC_HTK
 import matplotlib.pyplot as plt
 
 
