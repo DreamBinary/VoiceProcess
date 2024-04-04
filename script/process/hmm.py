@@ -108,5 +108,6 @@ if __name__ == "__main__":
     hmm = HMM("../../data/corpus.txt")
     test_strs = ["今天 天气 特别 好", "欢迎 大家 的 到来", "请 大家 喝茶", "你 的 名字 是 什么"]
     for s in test_strs:
-        p, o = hmm.viterbi(s.split(" "))
-        print(list(zip(s, o)))
+        ss = s.split(" ")
+        p, o = hmm.viterbi(ss)
+        print(list(zip(ss, o)))
